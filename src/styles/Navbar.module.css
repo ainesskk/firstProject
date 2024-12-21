@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p{
+    @apply font-montserrat font-normal text-sm;
+}
+
+@screen sm {
+    p {
+        @apply font-semibold text-base;
+    }
+}
+
+img{
+    max-width: 35px;
+}
