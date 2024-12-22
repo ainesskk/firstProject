@@ -2,76 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-/*:root {*/
-/*    --body-margin: calc(85px * 2);*/
-/*}*/
+:root {
+    --body-margin: calc(85px * 2);
+}
 
-/*@media (max-width: 768px) {*/
-/*    :root {*/
-/*        --body-margin: calc(40px * 2);*/
-/*    }*/
-/*}*/
+@media (max-width: 768px) {
+    :root {
+        --body-margin: calc(40px * 2);
+    }
+}
 
-/*@media (max-width: 640px) {*/
-/*    :root {*/
-/*        --body-margin: calc(15px * 2);*/
-/*    }*/
-/*}*/
+@media (max-width: 640px) {
+    :root {
+        --body-margin: calc(15px * 2);
+    }
+}
 
-/*body {*/
-/*    width: 100%;*/
-/*    max-width: calc(100% - var(--body-margin));*/
-/*    margin: 0 auto;*/
-/*}*/
+.main-container {
+    width: 100%;
+    max-width: calc(100% - var(--body-margin));
+    margin: 0 auto;
+}
 
-/*h1, h2, h3,*/
-/*.subtitle, .subtitle2,*/
-/*.body-text, .body-text2 {*/
-/*    @apply font-montserrat text-black;*/
-/*}*/
+h1, h2, h3,
+.subtitle, .subtitle2,
+.body-text, .body-text2 {
+    @apply font-montserrat text-black;
+}
 
-/*h1 {*/
-/*    @apply font-semibold text-2xl;*/
-/*}*/
+h1 {
+    @apply font-semibold text-2xl;
+}
 
-/*.subtitle {*/
-/*    @apply font-bold text-xl;*/
-/*}*/
+.subtitle {
+    @apply font-bold text-xl;
+}
 
-/*.subtitle2 {*/
-/*    @apply font-normal text-sm;*/
-/*}*/
+.subtitle2 {
+    @apply font-normal text-sm;
+}
 
-/*.body-text {*/
-/*    @apply font-normal text-sm;*/
-/*}*/
+.body-text {
+    @apply font-normal text-sm;
+}
 
-/*@screen sm {*/
-/*    h1 {*/
-/*        @apply font-bold text-6xl;*/
-/*    }*/
+@screen sm {
+    h1 {
+        @apply font-bold text-6xl;
+    }
 
-/*    h2 {*/
-/*        @apply font-bold text-3xl;*/
-/*    }*/
+    h2 {
+        @apply font-bold text-3xl;
+    }
 
-/*    h3 {*/
-/*        @apply font-semibold text-2xl;*/
-/*    }*/
+    h3 {
+        @apply font-semibold text-2xl;
+    }
 
-/*    .subtitle {*/
-/*        @apply font-semibold text-xl;*/
-/*    }*/
+    .subtitle {
+        @apply font-semibold text-xl;
+    }
 
-/*    .subtitle2 {*/
-/*        @apply font-semibold text-base;*/
-/*    }*/
+    .subtitle2 {
+        @apply font-semibold text-base;
+    }
 
-/*    .body-text {*/
-/*        @apply font-normal text-xl;*/
-/*    }*/
+    .body-text {
+        @apply font-normal text-xl;
+    }
 
-/*    .body-text2 {*/
-/*        @apply font-normal text-base;*/
-/*    }*/
-/*}*/
+    .body-text2 {
+        @apply font-normal text-base;
+    }
+}
