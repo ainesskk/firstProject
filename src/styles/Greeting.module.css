@@ -1,0 +1,7 @@
+.gradient {
+    @apply object-cover w-full h-full ;
+}
+
+.gradient {
+    transform: scale(1.4);
+}

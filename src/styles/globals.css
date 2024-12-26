@@ -8,14 +8,18 @@
 
 @media (max-width: 768px) {
     :root {
-        --body-margin: calc(40px * 2);
+        --body-margin: calc(39px * 2);
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 639px) {
     :root {
         --body-margin: calc(15px * 2);
     }
+}
+
+body {
+    @apply bg-white;
 }
 
 .main-container {
@@ -31,47 +35,47 @@ h1, h2, h3,
 }
 
 h1 {
-    @apply font-semibold text-2xl;
+    @apply font-semibold text-2xl !important;;
 }
 
 .subtitle {
-    @apply font-bold text-xl;
+    @apply font-bold text-xl !important;;
 }
 
 .subtitle2 {
-    @apply font-normal text-sm;
+    @apply font-normal text-sm !important;;
 }
 
 .body-text {
-    @apply font-normal text-sm;
+    @apply font-normal text-sm !important;;
 }
 
 @screen sm {
     h1 {
-        @apply font-bold text-6xl;
+        @apply font-bold text-6xl !important;;
     }
 
     h2 {
-        @apply font-bold text-3xl;
+        @apply font-bold text-3xl !important;;
     }
 
     h3 {
-        @apply font-semibold text-2xl;
+        @apply font-semibold text-2xl !important;;
     }
 
     .subtitle {
-        @apply font-semibold text-xl;
+        @apply font-semibold text-xl !important;;
     }
 
     .subtitle2 {
-        @apply font-semibold text-base;
+        @apply font-semibold text-base !important;;
     }
 
     .body-text {
-        @apply font-normal text-xl;
+        @apply font-normal text-xl !important;;
     }
 
     .body-text2 {
-        @apply font-normal text-base;
+        @apply font-normal text-base !important;;
     }
 }

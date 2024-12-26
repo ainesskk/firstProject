@@ -1,11 +1,16 @@
 import "./styles/globals.css"
 import Navbar from "./components/Navbar.jsx";
+import Greeting from "./components/Greeting.jsx";
 
 function App() {
 
   return (
     <>
-      <Navbar />
+        <Navbar />
+        <div className="main-container">
+            <Greeting />
+        </div>
+
     </>
   )
 }

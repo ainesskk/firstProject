@@ -22,6 +22,15 @@ export default {
       },
       fontSize: {
         '3xl': '2rem',
+      },
+      backgroundImage: {
+        'gradient-img': "url('./src/images/gradient.png')",
+      },
+      borderRadius: {
+        '4xl': '30%',
+      },
+      rotate: {
+        '270': '270deg'
       }
     },
   },
