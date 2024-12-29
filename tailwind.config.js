@@ -27,11 +27,21 @@ export default {
         'gradient-img': "url('./src/images/gradient.png')",
       },
       borderRadius: {
-        '4xl': '30%',
+        '4xl': '50rem',
+        '50': '50%',
       },
       rotate: {
         '270': '270deg'
-      }
+      },
+      screens: {
+        'sm': '640px',
+        'sm2': '480px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
+      gridColumnStart: theme => theme('grid-column-start'),
     },
   },
   plugins: [],

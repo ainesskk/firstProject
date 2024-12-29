@@ -1,7 +1,15 @@
-.gradient {
-    @apply object-cover w-full h-full ;
+.sendBtn {
+    @apply h-full w-[16px] md:w-[24px]
 }
 
-.gradient {
-    transform: scale(1.4);
+.borderElement p{
+    @apply relative pt-[24px] mt-[38px] md:pt-[16px] md:mt-[36px] xl:pt-[24px] xl:mt-[92px];
+}
+
+.borderElement::before {
+    @apply absolute;
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #7E3AF2;
 }

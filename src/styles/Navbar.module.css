@@ -16,7 +16,7 @@ p {
     @apply font-montserrat font-normal text-sm;
 }
 
-@screen sm {
+@screen md {
     p {
         @apply font-semibold text-base;
     }

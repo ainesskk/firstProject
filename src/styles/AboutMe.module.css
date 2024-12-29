@@ -1,0 +1,78 @@
+:root {
+    --mainMargin: calc(15px * 2);
+    --roundContainerWidth: calc(100vw - var(--mainMargin));
+}
+
+.aboutContainer {
+    @apply grid grid-cols-2 gap-[30px] mt-[36px] sm2:grid-cols-5 md:grid-cols-6 md:mt-[80px] xl:grid-cols-12 xl:gap-[30px];
+}
+
+.roundContainer {
+    @apply relative rounded-50 bg-amber-200 border-[17px] max-w-[290px] max-h-[290px] xl:max-w-[412px] lg:max-w-[412px] xl:border-[24px] overflow-hidden;
+    @apply col-span-2 sm2:col-span-5 md:col-span-3 xl:col-span-5;
+    width: var(--roundContainerWidth);
+    max-height: var(--roundContainerWidth);
+    aspect-ratio: 1 / 1;
+    border-color: transparent;
+    background-image: url('/src/assets/gradient.png');
+    background-size: 200%;
+    background-position: center;
+}
+
+.roundManContainer {
+    @apply absolute inset-0 rounded-50 bg-white overflow-hidden;
+    background-image: url('/src/assets/suspicious_man.png');
+    background-color: #E5E7EB;
+    background-size: 87%;
+    background-position: center;
+
+}
+
+.infoTextContainer {
+    @apply col-span-2 sm2:col-span-3 sm2:col-start-2 md:col-span-3 xl:col-span-5 xl:col-start-7;
+    @apply md:my-auto;
+}
+
+@media screen and (min-width: 480px) {
+    :root {
+        --mainMargin: calc(100vw - 450px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --mainMargin: calc(39px * 2);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    :root {
+        --mainMargin: calc(85px * 2);
+    }
+}
+
+.borderElement p {
+    @apply relative pt-[24px];
+}
+
+.borderElement::before {
+    @apply absolute;
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #7E3AF2;
+}
+
+.sendBtn {
+    @apply h-full w-[16px] md:w-[24px];
+}
+
+@media screen and (max-width: 767px) {
+    .roundContainer, .infoTextContainer {
+        @apply mx-auto;
+    }
+
+    .infoTextContainer {
+        @apply mt-[36px];
+    }
+}

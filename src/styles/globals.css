@@ -6,13 +6,13 @@
     --body-margin: calc(85px * 2);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1279px) {
     :root {
         --body-margin: calc(39px * 2);
     }
 }
 
-@media (max-width: 639px) {
+@media screen and (max-width: 767px) {
     :root {
         --body-margin: calc(15px * 2);
     }
@@ -23,59 +23,80 @@ body {
 }
 
 .main-container {
-    width: 100%;
-    max-width: calc(100% - var(--body-margin));
+    /*На всякий случай оставить*/
+    /*width: 100%;*/
+    /*max-width: calc(100% - var(--body-margin));*/
+    width: calc(100% - var(--body-margin));
+    max-width: 1440px;
     margin: 0 auto;
 }
 
 h1, h2, h3,
 .subtitle, .subtitle2,
-.body-text, .body-text2 {
+.body-text, .body-text2,
+.subtitle2-bold{
     @apply font-montserrat text-black;
 }
 
 h1 {
-    @apply font-semibold text-2xl !important;;
+    @apply font-bold text-2xl !important;;
+}
+
+h2 {
+    @apply font-semibold text-xl !important;;
 }
 
 .subtitle {
-    @apply font-bold text-xl !important;;
+    @apply font-semibold text-sm !important;;
 }
 
 .subtitle2 {
     @apply font-normal text-sm !important;;
 }
 
+.subtitle-bold {
+    @apply font-semibold text-sm !important;;
+}
+
 .body-text {
     @apply font-normal text-sm !important;;
 }
 
-@screen sm {
+.btn {
+    @apply bg-lavender items-center rounded-[50px] px-[13px] py-[9px] md:px-[25px] md:py-[13px];
+}
+
+.btn-text {
+    @apply font-semibold text-sm text-white pr-[8px] md:pr-[12px];
+}
+
+@screen md {
     h1 {
-        @apply font-bold text-6xl !important;;
+        @apply text-6xl !important;
     }
 
     h2 {
-        @apply font-bold text-3xl !important;;
-    }
-
-    h3 {
-        @apply font-semibold text-2xl !important;;
+        @apply font-bold text-3xl !important;
     }
 
     .subtitle {
-        @apply font-semibold text-xl !important;;
+        @apply text-xl !important;
     }
 
     .subtitle2 {
-        @apply font-semibold text-base !important;;
+        @apply font-normal text-xl !important;
+    }
+
+    .subtitle-bold {
+        @apply font-semibold text-xl !important;
     }
 
     .body-text {
-        @apply font-normal text-xl !important;;
+        @apply font-normal text-xl !important;
     }
 
-    .body-text2 {
-        @apply font-normal text-base !important;;
+    .btn-text {
+        @apply text-base;
     }
+
 }
