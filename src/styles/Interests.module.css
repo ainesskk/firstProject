@@ -1,0 +1,25 @@
+.interestsContainer {
+    @apply col-span-2 xl:col-span-6;
+}
+
+.interestsItems {
+    @apply xl:col-span-5;
+}
+
+.interestsItem {
+    @apply flex;
+}
+
+.interestsItem:not(:last-child) {
+    @apply mb-6 md:mb-11;
+}
+
+.itemIcon {
+    @apply flex items-center justify-center border-2 border-lavender rounded-full mr-2;
+    @apply w-[44px] h-[44px] md:w-[60px] md:h-[60px];
+    aspect-ratio: 1/1;
+}
+
+.itemInfo {
+    @apply items-center;
+}

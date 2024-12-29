@@ -63,6 +63,15 @@
     background-color: #7E3AF2;
 }
 
+.borderElementText {
+    @apply font-normal text-sm !important;
+}
+@screen md {
+    .borderElementText {
+        @apply text-xl !important;
+    }
+}
+
 .sendBtn {
     @apply h-full w-[16px] md:w-[24px];
 }
@@ -76,3 +85,4 @@
         @apply mt-[36px];
     }
 }
+

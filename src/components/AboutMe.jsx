@@ -11,7 +11,7 @@ export default function AboutMe() {
                 </div>
                 <div className={styles.infoTextContainer}>
                     <div className={styles.borderElement}>
-                        <p className="subtitle2">
+                        <p className={styles.borderElementText}>
                             <span className="subtitle-bold">Nick Richardson</span> - specialist in Frontend
                             development.
                             Clear code is my passion. Solving issues through negotiations.

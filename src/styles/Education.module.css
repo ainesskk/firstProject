@@ -1,0 +1,26 @@
+.educationContainer {
+    @apply col-span-2 xl:col-span-6;
+}
+
+.educationContainer {
+}
+
+.educationItems{
+    @apply col-span-2 xl:col-span-5 xl:col-start-7;
+}
+
+.educationItem:not(:last-child){
+    @apply  border-b-2 border-['#E5E7EB'] mb-3 md:mb-3.5;
+}
+
+.educationItem{
+    @apply flex mb-3 md:mb-3.5;
+}
+
+.dates {
+    @apply w-[120px] md:w-[152px];
+}
+
+.itemInfo {
+    @apply flex-1 ml-1 md:ml-4;
+}
