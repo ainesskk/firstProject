@@ -1,4 +1,5 @@
 import styles from "../styles/Greeting.module.css"
+import {Link} from "react-scroll";
 
 export default function Greeting() {
     return (
@@ -11,13 +12,14 @@ export default function Greeting() {
                         <p className="body-text pt-[24px]">Help you to create high-quality digital
                             products that your clients will love and let your business thrive</p>
                     </div>
-                    <button
-                        className="btn flex mt-[27px] md:mt-[44px] xl:mt-[60px] mb-[225px] md:mb-[51px] xl:mb-[166px]">
-                        <p className="btn-text">Get in touch</p>
-                        <img className={styles.sendBtn} src="src/assets/Send.svg" alt="send"/>
-                    </button>
+                    <Link to="contactme" smooth={true} duration={500}>
+                        <button
+                            className="btn flex mt-[27px] md:mt-[44px] xl:mt-[60px] mb-[225px] md:mb-[51px] xl:mb-[166px]">
+                            <p className="btn-text">Get in touch</p>
+                            <img className={styles.sendBtn} src="src/assets/Send.svg" alt="send"/>
+                        </button>
+                    </Link>
                 </div>
-
             </div>
 
         </>

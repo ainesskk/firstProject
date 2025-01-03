@@ -1,4 +1,5 @@
 import styles from "../styles/AboutMe.module.css"
+import {Link} from "react-scroll";
 
 export default function AboutMe() {
     return (
@@ -17,10 +18,12 @@ export default function AboutMe() {
                             Clear code is my passion. Solving issues through negotiations.
                         </p>
                     </div>
-                    <button className="btn hidden md:flex grid-cols-12 md:mt-[44px] xl:mt-[65px]">
-                        <p className="btn-text">Get in touch</p>
-                        <img className={styles.sendBtn} src="src/assets/Send.svg" alt="send"/>
-                    </button>
+                    <Link to="contactme" smooth={true} duration={500}>
+                        <button className="btn hidden md:flex grid-cols-12 md:mt-[44px] xl:mt-[65px]">
+                            <p className="btn-text">Get in touch</p>
+                            <img className={styles.sendBtn} src="src/assets/Send.svg" alt="send"/>
+                        </button>
+                    </Link>
                 </div>
             </div>
         </>

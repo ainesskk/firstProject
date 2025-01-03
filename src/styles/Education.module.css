@@ -1,20 +1,24 @@
 .educationContainer {
-    @apply col-span-2 xl:col-span-6;
-}
-
-.educationContainer {
+    @apply col-span-2 xl:col-span-6 md:mb-[100px];
 }
 
 .educationItems{
     @apply col-span-2 xl:col-span-5 xl:col-start-7;
 }
 
-.educationItem:not(:last-child){
-    @apply  border-b-2 border-['#E5E7EB'] mb-3 md:mb-3.5;
-}
-
 .educationItem{
     @apply flex mb-3 md:mb-3.5;
+    @apply border-b-2 border-['#E5E7EB'] mb-3 md:mb-3.5;
+}
+
+.educationItem:last-child{
+    @apply mb-0;
+}
+
+@media (min-width: 768px){
+    .educationItem:last-child{
+        @apply border-0;
+    }
 }
 
 .dates {

@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .border-greyDark {
+        border-color: #E5E7EB;
+    }
+
+    .border-lavender {
+        border-color: #7E3AF2;
+    }
+}
+
 :root {
     --body-margin: calc(85px * 2);
 }
@@ -31,7 +41,7 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3,
+h1, h2, h3, label,
 .subtitle, .subtitle2,
 .body-text, .body-text2,
 .subtitle2-bold{
@@ -70,8 +80,28 @@ h2 {
     @apply bg-lavender items-center rounded-[50px] px-[13px] py-[9px] md:px-[25px] md:py-[13px];
 }
 
+.btn:hover {
+    @apply bg-[#6C2BD9];
+}
+
+.btn:active {
+    outline: 2px solid #CABFFD;
+}
+
 .btn-text {
     @apply font-semibold text-sm text-white pr-[8px] md:pr-[12px];
+}
+
+input{
+    @apply bg-white rounded-2xl px-5 py-[13px] border-[1px] border-greyDark outline-none !important;
+}
+
+input:hover, input:focus{
+    @apply border-lavender !important;
+}
+
+input .error{
+    @apply bg-white rounded-2xl px-5 py-[13px] border-[1px] border-greyDark !important;
 }
 
 @screen md {
