@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Greeting from "./components/Greeting.jsx";
 import AboutMe from "./components/AboutMe.jsx";
 import Information from "./components/Information.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
             <Greeting />
             <AboutMe />
             <Information />
+            <Footer />
         </div>
 
     </>

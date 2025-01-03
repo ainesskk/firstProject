@@ -8,29 +8,29 @@ export default function Education(){
                 <div className={styles.educationItems}>
                     <div className={styles.educationItem}>
                         <div className={styles.dates}>
-                            <p className="body-text2">2008 - Present</p>
+                            <p className="body-text">2008 - Present</p>
                         </div>
                         <div className={styles.itemInfo}>
                             <p className="subtitle2">Middle Frontend developer</p>
-                            <p className="body-text2 pt-2 pb-3 md:pb-8">Ozon</p>
+                            <p className="body-text pt-2 pb-3 md:pb-8">Ozon</p>
                         </div>
                     </div>
                     <div className={styles.educationItem}>
                         <div className={styles.dates}>
-                            <p className="body-text2">2006 - 2007</p>
+                            <p className="body-text">2006 - 2007</p>
                         </div>
                         <div className={styles.itemInfo}>
                             <p className="subtitle2">Junior Frontend developer</p>
-                            <p className="body-text2 pt-2 pb-3 md:pb-8">Facebook</p>
+                            <p className="body-text pt-2 pb-3 md:pb-8">Facebook</p>
                         </div>
                     </div>
                     <div className={styles.educationItem}>
                         <div className={styles.dates}>
-                            <p className="body-text2">2000 - 2005</p>
+                            <p className="body-text">2000 - 2005</p>
                         </div>
                         <div className={styles.itemInfo}>
                             <p className="subtitle2">Frontend developer</p>
-                            <p className="body-text2 pt-2 pb-3 md:pb-8 ">Stanford University</p>
+                            <p className="body-text pt-2 pb-3 md:pb-8 ">Stanford University</p>
                         </div>
                     </div>
                 </div>

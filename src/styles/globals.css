@@ -100,7 +100,7 @@ h2 {
     }
 
     .body-text2 {
-        @apply font-normal text-xl !important;
+        @apply font-normal text-base !important;
     }
 
     .btn-text {
