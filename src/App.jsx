@@ -12,8 +12,8 @@ function App() {
   return (
     <>
         <Navbar />
+        <Greeting />
         <div className="main-container ">
-            <Greeting />
             <Element name="aboutme">
                 <AboutMe />
             </Element>

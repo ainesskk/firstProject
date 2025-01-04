@@ -1,3 +1,21 @@
+:root {
+    --greeting-height: calc(100vh - 69px);
+    --square-width: calc(90vw - 10vh);
+    --square-height: calc(90vw - 10vh);
+}
+
+.greetingContainer {
+    height: var(--greeting-height);
+    overflow: hidden;
+}
+
+.square {
+    width: var(--square-width);
+    height: var(--square-height);
+    background-image: url("src/assets/gradient.png");
+    border-radius: 10vh;
+}
+
 .sendBtn {
     @apply h-full w-[16px] md:w-[24px]
 }

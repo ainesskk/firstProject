@@ -77,7 +77,7 @@ h2 {
 }
 
 .btn {
-    @apply bg-lavender items-center rounded-[50px] px-[13px] py-[9px] md:px-[25px] md:py-[13px];
+    @apply bg-lavender items-center transition duration-300 ease-in-out rounded-[50px] px-[13px] py-[9px] md:px-[25px] md:py-[13px];
 }
 
 .btn:hover {
@@ -92,16 +92,24 @@ h2 {
     @apply font-semibold text-sm text-white pr-[8px] md:pr-[12px];
 }
 
-input{
-    @apply bg-white rounded-2xl px-5 py-[13px] border-[1px] border-greyDark outline-none !important;
+input, textarea{
+    @apply bg-white rounded-2xl px-5 pl-[54px] py-[13px] border-[1px] border-greyDark outline-none !important;
 }
 
-input:hover, input:focus{
+textarea {
+    @apply px-5 !important;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
     @apply border-lavender !important;
 }
 
-input .error{
-    @apply bg-white rounded-2xl px-5 py-[13px] border-[1px] border-greyDark !important;
+input.error, textarea.error {
+    @apply border-red !important;
+}
+
+textarea {
+    @apply resize-none !important;
 }
 
 @screen md {

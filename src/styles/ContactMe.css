@@ -1,0 +1,71 @@
+.bgContainer {
+    @apply py-16;
+    background-image: url("../assets/gradient.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contactMeContainer {
+    @apply bg-[#FFFFFF] mx-auto max-w-[300px] rounded-2xl py-12 px-[5px]
+    md:px-8 md:py-12 md:max-w-[712px] md:my-[70px]
+    xl:px-12 xl:max-w-[764px];
+}
+
+.formContainer {
+    @apply mx-auto;
+}
+
+@screen md {
+    .formContainer {
+        @apply min-w-0 max-w-none mx-0;
+    }
+}
+
+form{
+    @apply mt-9 mx-4 md:mt-0 md:mx-0;
+}
+
+.sendBtn {
+    @apply h-full w-[16px] md:w-[24px]
+}
+
+.labelText{
+    @apply font-semibold text-sm md:text-base mb-2;
+}
+
+.errorText{
+    @apply text-red text-xs font-semibold md:text-sm; ;
+}
+
+input[name="name"] {
+    background-image: url('../assets/PersonG.svg');
+}
+
+input[name="name"]:focus, input[name="name"].filled,
+input[name="name"].filled:focus {
+    background-image: url('../assets/PersonV.svg');
+}
+
+input[name="email"] {
+    background-image: url('../assets/mailG.svg');
+}
+
+input[name="email"]:focus, input[name="email"].filled,
+input[name="email"].filled:focus{
+    background-image: url('../assets/mailV.svg');
+}
+
+input.error, input.error:focus {
+    background-image: url('../assets/Error.png');
+}
+
+input[name="name"], input[name="name"]:focus,
+input[name="email"], input[name="email"]:focus,
+input.error, input.error:focus,
+input.valid, input.valid:focus {
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 24px 24px;
+}
+
