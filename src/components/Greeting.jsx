@@ -24,8 +24,10 @@ export default function Greeting() {
                         </div>
                     </div>
                 </div>
-
                 <div className={styles.square}></div>
+                {/*<div className={styles.imgContainer}>*/}
+                    <img  className={styles.imgContainer} src="src/assets/happy_man.png" alt="happyMan"/>
+                {/*</div>*/}
             </div>
         </>
     )
