@@ -33,12 +33,8 @@ body {
 }
 
 .main-container {
-    /*На всякий случай оставить*/
-    /*width: 100%;*/
-    /*max-width: calc(100% - var(--body-margin));*/
     width: calc(100% - var(--body-margin));
-    max-width: 1440px;
-    margin: 0 auto;
+    @apply max-w-[1440px] mx-auto my-0;
 }
 
 h1, h2, h3, label,

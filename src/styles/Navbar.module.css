@@ -31,5 +31,5 @@ p {
 }
 
 .logo {
-    max-width: 35px;
+    @apply max-w-[35px]
 }

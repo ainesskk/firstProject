@@ -56,11 +56,8 @@
 }
 
 .borderElement::before {
-    @apply absolute;
+    @apply absolute w-[25px] h-[3px] bg-[#7E3AF2];
     content: '';
-    width: 25px;
-    height: 3px;
-    background-color: #7E3AF2;
 }
 
 .borderElementText {

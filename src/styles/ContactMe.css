@@ -1,7 +1,6 @@
 .bgContainer {
-    @apply py-16;
+    @apply py-16 bg-no-repeat;
     background-image: url("../assets/gradient.png");
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -64,7 +63,7 @@ input[name="name"], input[name="name"]:focus,
 input[name="email"], input[name="email"]:focus,
 input.error, input.error:focus,
 input.valid, input.valid:focus {
-    background-repeat: no-repeat;
+    @apply bg-no-repeat;
     background-position: 20px center;
     background-size: 24px 24px;
 }
