@@ -1,4 +1,7 @@
 import styles from "../styles/Interests.module.css";
+import musicV from "./../assets/MusicV.svg"
+import drawingV from "./../assets/drawingV.svg"
+import PhotoV from "./../assets/PhotoV.svg"
 
 export default function Interests() {
     return (
@@ -8,7 +11,7 @@ export default function Interests() {
                     <div className={styles.interestsItems}>
                         <div className={styles.interestsItem}>
                             <div className={styles.itemIcon}>
-                                <img className="w-[18px] md:w-6" src="src/assets/MusicV.svg" alt="music"/>
+                                <img className="w-[18px] md:w-6" src={musicV} alt="music"/>
                             </div>
                             <div className={styles.itemInfo}>
                                 <p className="subtitle2 mb-1">Music</p>
@@ -17,7 +20,7 @@ export default function Interests() {
                         </div>
                         <div className={styles.interestsItem}>
                             <div className={styles.itemIcon}>
-                                <img className="w-[18px] md:w-6" src="src/assets/drawingV.svg" alt="music"/>
+                                <img className="w-[18px] md:w-6" src={drawingV} alt="music"/>
                             </div>
                             <div className={styles.itemInfo}>
                                 <p className="subtitle2 mb-1">Art</p>
@@ -26,7 +29,7 @@ export default function Interests() {
                         </div>
                         <div className={styles.interestsItem}>
                             <div className={styles.itemIcon}>
-                                <img className="w-[18px] md:w-6" src="src/assets/PhotoV.svg" alt="music"/>
+                                <img className="w-[18px] md:w-6" src={PhotoV} alt="music"/>
                             </div>
                             <div className={styles.itemInfo}>
                                 <p className="subtitle2 mb-1">Photography</p>

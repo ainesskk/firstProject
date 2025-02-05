@@ -1,5 +1,6 @@
 import styles from "../styles/AboutMe.module.css"
 import {Link} from "react-scroll";
+import send from "./../assets/SendV.svg";
 
 export default function AboutMe() {
     return (
@@ -21,7 +22,7 @@ export default function AboutMe() {
                     <Link to="contactme" smooth={true} duration={500}>
                         <button className="btn hidden md:flex grid-cols-12 md:mt-[44px] xl:mt-[65px]">
                             <p className="btn-text">Get in touch</p>
-                            <img className={styles.sendBtn} src="src/assets/Send.svg" alt="send"/>
+                            <img className={styles.sendBtn} src={send} alt="send"/>
                         </button>
                     </Link>
                 </div>

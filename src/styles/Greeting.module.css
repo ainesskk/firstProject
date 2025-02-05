@@ -20,7 +20,7 @@
     height: var(--square-side);
     max-height: var(--max-side);
     transform: translate(var(--square-margin-left), 50%) rotate(45deg);
-    background-image: url("src/assets/gradient.png");
+    background-image: url("/src/assets/gradient.png");
     background-position: 60% 60%;
     background-size: 180% 180%;
 }

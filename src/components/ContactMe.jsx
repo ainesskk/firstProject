@@ -1,9 +1,9 @@
 import "../styles/ContactMe.css";
 import {useState} from "react";
 import {validateName, errors, validateEmail} from "../js/validationFuncs.js";
+import send from "./../assets/SendV.svg";
 
 export default function ContactMe() {
-
     const [condition, setCondition] = useState({ name: "", email: ""});
     const [error, setError] = useState({ name: "", email: ""});
 
@@ -22,35 +22,35 @@ export default function ContactMe() {
     const onClick = (e) => {
         e.preventDefault();
 
-        const name = e.target.name.name;
-        const email = e.target.email.name;
+        let nameCondition, nameError, emailCondition, emailError;
         const nameWords = validateName(e.target.name.value);
-        console.log(nameWords);
         const emailTest = validateEmail(e.target.email.value);
 
         if (nameWords === 0) {
-            setCondition(prevState => ({ ...prevState, [name]: "error" }));
-            setError(prevState => ({ ...prevState, [name]: errors[0] }));
+            nameCondition = "error";
+            nameError = errors[0];
         } else if (nameWords === 2) {
-            setCondition(prevState => ({ ...prevState, [name]: "filled" }));
-            setError(prevState => ({ ...prevState, [name]: "" }));
+            nameCondition = "filled";
+            nameError = "";
         } else {
-            setCondition(prevState => ({ ...prevState, [name]: "error" }));
-            setError(prevState => ({ ...prevState, [name]: errors[1] }));
+            nameCondition = "error";
+            nameError = errors[1];
         }
 
         if ((e.target.email.value).trim() === "") {
-            setCondition(prevState => ({ ...prevState, [email]: "error" }));
-            setError(prevState => ({ ...prevState, [email]: errors[0] }));
+            emailCondition = "error";
+            emailError = errors[0];
         } else if (!emailTest) {
-            setCondition(prevState => ({ ...prevState, [email]: "error" }));
-            setError(prevState => ({ ...prevState, [email]: errors[2] }));
+            emailCondition = "error";
+            emailError = errors[2];
         } else {
-            setCondition(prevState => ({ ...prevState, [email]: "filled" }));
-            setError(prevState => ({ ...prevState, [email]: "" }));
+            emailCondition = "filled";
+            emailError = "";
         }
-    };
 
+        setCondition({ name: nameCondition, email: emailCondition });
+        setError({ name: nameError, email: emailError });
+    };
 
     return (
         <>
@@ -81,16 +81,14 @@ export default function ContactMe() {
                                            name="project"/>
                                 </div>
                             </div>
-                            <button
-                                className="btn flex mt-9">
-                            <p className="btn-text">Submit</p>
-                                <img className="sendBtn" src="src/assets/Send.svg" alt="send"/>
+                            <button className="btn flex mt-9">
+                                <p className="btn-text">Submit</p>
+                                <img className="sendBtn" src={send} alt="send"/>
                             </button>
                         </form>
                     </div>
                 </div>
             </div>
-
         </>
     );
 }

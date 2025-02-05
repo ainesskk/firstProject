@@ -1,3 +1,4 @@
+import send from "./../assets/SendV.svg";
 import Interests from "./Interests.jsx";
 import Education from "./Education.jsx";
 import styles from "../styles/Greeting.module.css";
@@ -14,7 +15,7 @@ export default function Information() {
                 <button
                     className="btn flex mt-[48px] mb-[100px] md:hidden">
                     <p className="btn-text">Get in touch</p>
-                    <img className={styles.sendBtn} src="src/assets/Send.svg" alt="send"/>
+                    <img className={styles.sendBtn} src={send} alt="send"/>
                 </button>
             </Link>
         </>

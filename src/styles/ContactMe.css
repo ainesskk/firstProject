@@ -1,6 +1,6 @@
 .bgContainer {
     @apply py-16 bg-no-repeat;
-    background-image: url("../assets/gradient.png");
+    background-image: url("/src/assets/gradient.png");
     background-position: center;
     background-size: cover;
 }
@@ -38,25 +38,25 @@ form{
 }
 
 input[name="name"] {
-    background-image: url('../assets/PersonG.svg');
+    background-image: url('/src/assets/PersonG.svg');
 }
 
 input[name="name"]:focus, input[name="name"].filled,
 input[name="name"].filled:focus {
-    background-image: url('../assets/PersonV.svg');
+    background-image: url('/src/assets/PersonV.svg');
 }
 
 input[name="email"] {
-    background-image: url('../assets/mailG.svg');
+    background-image: url('/src/assets/mailG.svg');
 }
 
 input[name="email"]:focus, input[name="email"].filled,
 input[name="email"].filled:focus{
-    background-image: url('../assets/mailV.svg');
+    background-image: url('/src/assets/mailV.svg');
 }
 
 input.error, input.error:focus {
-    background-image: url('../assets/Error.png');
+    background-image: url('/src/assets/Error.png');
 }
 
 input[name="name"], input[name="name"]:focus,
